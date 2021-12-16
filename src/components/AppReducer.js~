@@ -1,0 +1,13 @@
+export default (state, action) => {
+     switch(acton.type){
+     
+        case 'DELETE_TRANSANCTION':
+          return {
+            ...state,
+            transanctions: state.transanctions.filter(transanction => transanction.id !== action.payload)
+          
+          }
+        default:
+          return state;
+  }
+}
